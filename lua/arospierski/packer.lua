@@ -11,13 +11,13 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
+    -- use({
+    --     'rose-pine/neovim',
+    --     as = 'rose-pine',
+    --     config = function()
+    --         vim.cmd('colorscheme rose-pine')
+    --     end
+    -- })
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('mbbill/undotree')
@@ -42,5 +42,12 @@ return require('packer').startup(function(use)
         requires = {
             'nvim-tree/nvim-web-devicons', -- optional
         },
+    }
+
+    use {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
     }
 end)
