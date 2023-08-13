@@ -21,6 +21,8 @@ return require('packer').startup(function(use)
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('mbbill/undotree')
+
+    -- lsp zero - easy lsps
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
@@ -37,6 +39,7 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- nvim tree
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
@@ -44,10 +47,28 @@ return require('packer').startup(function(use)
         },
     }
 
+    -- tokyonight theme
     use {
         "folke/tokyonight.nvim",
         lazy = false,
         priority = 1000,
         opts = {},
+    }
+
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
     }
 end)
