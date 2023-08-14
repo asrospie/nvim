@@ -9,7 +9,7 @@ lsp.ensure_installed({
 	'eslint',
 	'lua_ls',
 	'rust_analyzer',
-	'ocamllsp',
+	-- 'ocamllsp',
 })
 
 lsp.on_attach(function(client, bufnr)
