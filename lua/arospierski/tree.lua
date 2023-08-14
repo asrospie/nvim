@@ -18,7 +18,7 @@ local function my_on_attach(bufnr)
     api.config.mappings.default_on_attach(bufnr)
 
     -- custom key mappings
-    vim.keymap.set('n', '<leader>wt', api.tree.toggle, opts('.'))
+    vim.keymap.set('n', '<leader>e', api.tree.toggle, opts('.'))
 end
 
 -- OR setup with some options
