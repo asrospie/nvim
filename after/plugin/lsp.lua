@@ -10,7 +10,7 @@ lsp.ensure_installed({
 	'lua_ls',
 	'rust_analyzer',
     'gopls',
-	-- 'ocamllsp',
+	'ocamllsp',
 })
 
 lsp.on_attach(function(client, bufnr)
