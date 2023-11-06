@@ -1,6 +1,6 @@
 local ui = require('harpoon.ui')
 local mark = require('harpoon.mark')
-local cmd_ui = require('harpoon.cmd-ui')
+-- local cmd_ui = require('harpoon.cmd-ui')
 
 vim.keymap.set("n", "<leader>ha", function() mark.add_file() end)
 vim.keymap.set("n", "<leader>hm", function() ui.toggle_quick_menu() end)

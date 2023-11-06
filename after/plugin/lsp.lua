@@ -9,8 +9,9 @@ lsp.ensure_installed({
 	'eslint',
 	'lua_ls',
 	'rust_analyzer',
-    'gopls',
-	'ocamllsp',
+    -- 'gopls',
+	-- 'ocamllsp',
+    'hls'
 })
 
 lsp.on_attach(function(client, bufnr)
@@ -19,8 +20,11 @@ lsp.on_attach(function(client, bufnr)
 	lsp.default_keymaps({buffer = bufnr})
 end)
 
+local lspconfig = require('lspconfig')
+-- require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+--
 -- (Optional) Configure lua language server for neovim
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.setup()
 
