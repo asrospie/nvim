@@ -7,6 +7,10 @@ vim.keymap.set("v", "gh", "^")
 vim.keymap.set("n", "ge", "G")
 vim.keymap.set("v", "ge", "G")
 
+-- remap to jump quicker
+vim.keymap.set("n", "(", "15k")
+vim.keymap.set("n", ")", "15j")
+
 -- exit visual mode with comma
 vim.keymap.set("v", ",", "<Esc>")
 
