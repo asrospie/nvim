@@ -47,3 +47,8 @@ vim.keymap.set("n", "<leader>wl", "<C-W>l")
 vim.keymap.set("n", "<leader>w=", "<C-W>+")
 vim.keymap.set("n", "<leader>w-", "<C-W>-")
 vim.keymap.set("n", "<leader>wg", "<C-W>=")
+
+-- macro stuff
+vim.keymap.set("n", "<leader>m", "@q")
+vim.keymap.set("n", "<leader>nm", "qq")
+vim.keymap.set("n", "<leader>em", "q")
