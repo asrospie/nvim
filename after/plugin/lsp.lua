@@ -5,13 +5,13 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.ensure_installed({
-	'tsserver',
-	'eslint',
-	'lua_ls',
-	'rust_analyzer',
+	-- 'tsserver',
+	-- 'eslint',
+	-- 'lua_ls',
+	-- 'rust_analyzer',
     -- 'gopls',
 	-- 'ocamllsp',
-    'hls'
+    -- 'hls'
 })
 
 lsp.on_attach(function(client, bufnr)

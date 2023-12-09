@@ -50,5 +50,5 @@ vim.keymap.set("n", "<leader>wg", "<C-W>=")
 
 -- macro stuff
 vim.keymap.set("n", "<leader>m", "@q")
-vim.keymap.set("n", "<leader>nm", "qq")
-vim.keymap.set("n", "<leader>em", "q")
+-- vim.keymap.set("n", "<leader>nm", "qq")
+-- vim.keymap.set("n", "<leader>em", "q")
