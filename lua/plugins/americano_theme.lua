@@ -1,0 +1,5 @@
+return {
+  {
+    "cpwrs/americano.nvim",
+  },
+}
