@@ -3,7 +3,6 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 require("lspconfig").gleam.setup({})
 
 vim.o.listchars = "eol:\\u261a,tab:<->,trail:-,lead:\\u2022"
-require("americano").colorscheme()
 
 -- cmp setup
 

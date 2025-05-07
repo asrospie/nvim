@@ -56,4 +56,7 @@ vim.keymap.set("n", "<leader>m", "@q")
 -- vim.keymap.set("n", "<leader>nm", "qq")
 -- vim.keymap.set("n", "<leader>em", "q")
 
--- nvim keymap
+-- Default Settings
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
